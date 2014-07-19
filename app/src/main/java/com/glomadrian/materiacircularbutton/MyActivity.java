@@ -61,8 +61,11 @@ public class MyActivity extends FragmentActivity {
             @Override
             public void onPageSelected(int position) {
                 ImageFragment page = mImageAdapter.getFragment(position);
-                Palette palette = page.getPaleette();
-                circleButton.changueColorAnimate(palette.getVibrantColor().getRgb());
+                if(page!=null){
+                    Palette palette = page.getPaleette();
+                    circleButton.changueColorAnimate(palette.getVibrantColor().getRgb());
+                }
+
             }
 
             @Override

@@ -34,9 +34,7 @@ public class ImageAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-
-
-        ImageFragment imageFragment = new ImageFragment(imageResources.get(position));
+        ImageFragment imageFragment = ImageFragment.newInstance(imageResources.get(position));
         fragmentHashMap.put(position,imageFragment);
         return imageFragment;
     }

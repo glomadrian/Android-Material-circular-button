@@ -21,8 +21,23 @@ public class ImageFragment  extends android.support.v4.app.Fragment{
     public ImageFragment() {
     }
 
-    public ImageFragment(Integer imageResource) {
-        this.imageResource = imageResource;
+
+    public static  ImageFragment newInstance(Integer imageResource){
+
+        ImageFragment imageFragment = new ImageFragment();
+
+        // Supply num input as an argument.
+        Bundle args = new Bundle();
+        args.putInt("imageResource", imageResource);
+        imageFragment.setArguments(args);
+
+        return imageFragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        imageResource = getArguments() != null ? getArguments().getInt("imageResource") : 0;
     }
 
     @Override

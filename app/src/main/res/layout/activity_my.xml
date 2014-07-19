@@ -15,6 +15,18 @@
         android:layout_alignParentStart="true"
         android:id="@+id/relativeLayout">
 
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/header"
+            android:fontFamily="sans-serif-thin"
+            android:layout_alignParentTop="true"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:layout_centerInParent="true"
+            android:textSize="25sp" />
+
     </RelativeLayout>
 
     <com.glomadrian.button.CircleButton
@@ -23,9 +35,11 @@
         android:layout_height="60dp"
         custom:color="#c3c3c3"
         custom:transitionTime="1200"
+        android:adjustViewBounds="true"
         android:src="@drawable/plus"
+        android:padding="20dp"
         android:scaleType="fitCenter"
-        android:layout_marginTop="66dp"
+        android:layout_marginTop="65dp"
         android:layout_centerHorizontal="true" />
 
     <android.support.v4.view.ViewPager
