@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    tools:context=".MyActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_card"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout">
+
+    </RelativeLayout>
+
+    <com.glomadrian.button.CircleButton
+        android:id="@+id/materialButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        custom:color="#c3c3c3"
+        custom:transitionTime="1200"
+        android:src="@drawable/plus"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="66dp"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout">
+
+    </android.support.v4.view.ViewPager>
+
+
+
+</RelativeLayout>
