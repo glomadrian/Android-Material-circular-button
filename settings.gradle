@@ -1,1 +1,1 @@
-include ':app', ':circularbuttonanimatedcolor'
+include ':app', ':materialCircularButton'

@@ -9,7 +9,7 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="100dp"
-        android:background="@drawable/bg_card"
+        android:background="#FFF"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -23,13 +23,14 @@
             android:fontFamily="sans-serif-thin"
             android:layout_alignParentTop="true"
             android:textColor="#000"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="18dp"
             android:layout_centerInParent="true"
+
             android:textSize="25sp" />
 
     </RelativeLayout>
 
-    <com.glomadrian.button.CircleButton
+    <com.glomadrian.button.MaterialButton
         android:id="@+id/materialButton"
         android:layout_width="60dp"
         android:layout_height="60dp"
